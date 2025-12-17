@@ -1,0 +1,176 @@
+{
+  "project": {
+    "name": "Mahendra Travels Website",
+    "brand": {
+      "name": "Mahendra Travels",
+      "tagline": "Explore. Discover. Journey.",
+      "logo": "assets/logo-mahendra-travels.png",
+      "design_system": {
+        "colors": {
+          "primary_gradient": ["#0072FF", "#00C4B3", "#11C26F"],
+          "accent": "#95E6A8",
+          "backgrounds": {
+            "primary": "#FFFFFF",
+            "secondary_gradient": ["#F5FAFF", "#F4FFF9"]
+          },
+          "text": {
+            "primary": "#0B1530",
+            "secondary": "#3C475F",
+            "muted": "#6C7485"
+          }
+        },
+        "style": {
+          "design_keywords": [
+            "premium",
+            "clean",
+            "modern",
+            "transport-focused",
+            "travel-focused"
+          ],
+          "visual_style": {
+            "gradients": "smooth, subtle, logo-inspired",
+            "shadows": "soft, glassmorphism-style",
+            "corners": "rounded",
+            "typography_scale": "large headings, comfortable body text",
+            "layout_density": "spacious and minimal"
+          },
+          "animations": {
+            "global": {
+              "scroll_behavior": "smooth",
+              "easing": "ease-out",
+              "duration_ms": 500
+            },
+            "types": [
+              "fade-in",
+              "slide-up",
+              "slide-left",
+              "slide-right",
+              "parallax"
+            ],
+            "notes": [
+              "Animations must feel smooth and premium, never jarring",
+              "Use motion to highlight content, not distract"
+            ]
+          }
+        }
+      }
+    },
+    "tech_stack": {
+      "frontend": "HTML, CSS, JavaScript",
+      "styling": "Custom CSS with Bootstrap",
+      "animations": "CSS + IntersectionObserver",
+      "build": "Static HTML",
+      "requirements": {
+        "responsive": true,
+        "mobile_first": true,
+        "seo_friendly": true,
+        "optimized_images": true,
+        "smooth_scrolling": true,
+        "dummy_data_allowed": true
+      }
+    }
+  },
+  "layout": {
+    "navigation": {
+      "type": "sticky_top",
+      "links": [
+        { "label": "Home", "href": "#hero" },
+        { "label": "About", "href": "#about" },
+        { "label": "Fleet", "href": "#fleet" },
+        { "label": "Urbania", "href": "#urbania" },
+        { "label": "Bangalore–Coorg", "href": "#bangalore-coorg" },
+        { "label": "Contact", "href": "#contact" }
+      ],
+      "cta": {
+        "label": "Book Now",
+        "href": "#contact",
+        "style": "primary_gradient_button"
+      },
+      "style": {
+        "background": "translucent glassmorphism over gradient/white",
+        "shadow": "subtle",
+        "logo_placement": "left",
+        "links_alignment": "right"
+      }
+    },
+    "pages": [
+      {
+        "id": "home",
+        "path": "/",
+        "seo": {
+          "title": "Mahendra Travels - Premium Urbania & Bus Travel Across Karnataka",
+          "meta_description": "Book premium Urbania vans, buses, and Volvo coaches with Mahendra Travels for corporate, family, and group journeys across Karnataka.",
+          "keywords": [
+            "Mahendra Travels",
+            "Urbania rentals",
+            "bus travel Karnataka",
+            "Volvo bus hire",
+            "premium travel"
+          ]
+        },
+        "sections": [
+          {
+            "id": "hero",
+            "type": "hero",
+            "layout": "full_screen",
+            "background": {
+              "type": "gradient",
+              "direction": "to right",
+              "colors": ["#0072FF", "#00C4B3", "#11C26F"]
+            },
+            "content": {
+              "heading": "Premium Urbania & Bus Travel Across Karnataka",
+              "subheading": "Explore. Discover. Journey.",
+              "description": "Premium, comfortable, and reliable travel solutions for corporate, family, and group trips across Karnataka and beyond.",
+              "primary_cta": {
+                "label": "View Fleet",
+                "href": "#fleet",
+                "style": "solid_light"
+              },
+              "secondary_cta": {
+                "label": "Book Now / Contact Us",
+                "href": "#contact",
+                "style": "outline_light"
+              }
+            }
+          },
+          {
+            "id": "about",
+            "type": "two_column_about",
+            "anchor": "about",
+            "content": {
+              "heading": "About Mahendra Travels",
+              "body": "Mahendra Travels specializes in premium Urbania, buses, and Volvo travel solutions for corporate, family, and group journeys. We focus on comfort, safety, and seamless travel experiences across Karnataka and beyond."
+            }
+          },
+          {
+            "id": "fleet",
+            "type": "scroll_animated_fleet",
+            "anchor": "fleet",
+            "content": {
+              "heading": "Our Premium Fleet",
+              "subheading": "Choose the perfect vehicle for your journey."
+            },
+            "fleet_items": [
+              {
+                "id": "urbania_9",
+                "category": "Urbania",
+                "title": "Urbania – 9 Seater",
+                "capacity_label": "Ideal for 6–9 passengers",
+                "description": "Compact premium Urbania perfect for family trips, airport transfers, and small corporate groups."
+              },
+              {
+                "id": "urbania_13",
+                "category": "Urbania",
+                "title": "Urbania – 13 Seater",
+                "capacity_label": "Ideal for 10–13 passengers",
+                "description": "Spacious Urbania ideal for medium-sized groups, corporate outings, and extended family trips."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+
